@@ -1,0 +1,6 @@
+<view class="container">
+  <image src="/images/title.jpg"></image>
+  <text>每周一部好电影</text>
+  <text>大咖每周推荐好片</text>
+  <text>我的邮箱: nfwyst@gmail.com</text>
+</view>

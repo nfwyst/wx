@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20rpx 0;
+  background-color: #eee;
+  text-align: center;
+  justify-content: space-around;
+}
+
+image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+text {
+}
