@@ -1,0 +1,4 @@
+image {
+  width: 520rpx;
+  border-radius: 3px;
+}

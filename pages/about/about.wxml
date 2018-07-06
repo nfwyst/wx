@@ -1,6 +1,8 @@
 <view class="container">
   <image src="/images/title.jpg" class="about-banner"></image>
   <text>每周一部好电影</text>
-  <text>大咖每周推荐好片</text>
+  <view>
+    <text>大咖</text><navigator class="nav-default" hover-class="nav-hover" style="display: inline" open-type="switchTab" url="/pages/weekly/weekly">每周推荐</navigator><text>好片</text>
+  </view>
   <text>我的邮箱: nfwyst@gmail.com</text>
 </view>

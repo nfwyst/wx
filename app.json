@@ -1,13 +1,32 @@
 {
   "pages": [
-    "pages/weekly/weekly",
     "pages/about/about",
+    "pages/weekly/weekly",
     "pages/logs/logs"
   ],
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "每周推荐",
+        "pagePath": "pages/weekly/weekly",
+        "iconPath": "images/icons/weekly.png", 
+        "selectedIconPath": "images/icons/weekly-selected.png"
+      },
+      {
+        "text": "关于",
+        "pagePath": "pages/about/about",
+        "iconPath": "images/icons/about.png", 
+        "selectedIconPath": "images/icons/about-selected.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#00f"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "每周电影推荐",
     "navigationBarTextStyle": "black"
   }
 }

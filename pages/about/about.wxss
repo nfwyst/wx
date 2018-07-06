@@ -4,8 +4,17 @@ image.about-banner {
   border-radius: 50%;
 }
 
-text:nth-of-type(1) {
+.container > text:nth-of-type(1) {
   font-size: 60rpx;
   font-weight: bold;
   text-shadow: 0 0 5px #fff;
 }
+
+.nav-default {
+  color: blue;
+}
+
+.nav-hover {
+  color: red;
+}
+

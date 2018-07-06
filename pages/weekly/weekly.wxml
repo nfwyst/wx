@@ -1,6 +1,6 @@
 <view class="container">
   <text>本周推荐</text>
-  <image src="/images/poster.png" mode="scaleToFill"></image>
+  <image src="/images/poster.png" mode="widthFix"></image>
   <text>教父</text>
-  <text>点评: 最精彩的剧本, 最真实的黑帮电影...</text>
+  <text>点评: 最精彩的剧本, 最真实的黑帮电影..............</text>
 </view>
