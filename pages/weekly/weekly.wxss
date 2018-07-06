@@ -1,4 +1,30 @@
 image {
-  width: 520rpx;
+  width: 150rpx;
+  height: 80px !important;
   border-radius: 3px;
+}
+
+text.info {
+}
+
+text.highly {
+  font-size: 16px;
+  color: red;
+}
+
+view.movie {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+view.movie-detail {
+  width: 560rpx;
+  padding-left: 20rpx;  
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+view.movie-detail > text {
+  display: block;
+  text-align: left;
 }

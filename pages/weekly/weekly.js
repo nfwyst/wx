@@ -4,7 +4,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    weekly: {
+      name: '教父',
+      image_url: '/images/poster.png',
+      comment: '点评: 最精彩的剧本, 最真实的黑帮电影',
+      highly: true
+    }
   },
 
   /**

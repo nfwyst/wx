@@ -1,6 +1,11 @@
 <view class="container">
   <text>本周推荐</text>
-  <image src="/images/poster.png" mode="widthFix"></image>
-  <text>教父</text>
-  <text>点评: 最精彩的剧本, 最真实的黑帮电影..............</text>
+  <view class='movie'>
+    <image src="{{ weekly.image_url }}" mode="widthFix"></image>
+    <view class='movie-detail'>
+      <text>{{ weekly.name }}</text>
+      <text class="info">{{ weekly.comment }} </text>
+      <text class="highly" wx:if="{{ weekly.highly }}">强烈推荐</text>
+    </view> 
+  </view>
 </view>
