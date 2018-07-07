@@ -1,12 +1,20 @@
 <view>
-  <swiper indicator-dots="{{indicatorDots}}" previous-margin="50rpx" next-margin="50rpx" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{ weekly }}">
+  <swiper 
+    indicator-dots="{{indicatorDots}}" 
+    previous-margin="50rpx" 
+    next-margin="50rpx" 
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    current="{{ currentIndex }}"
+    duration="{{duration}}">
+    <block wx:for="{{ weekly }}" wx:key="unique">
       <swiper-item class="movie">
         <view class='container movie-card'>
           <image src="{{ item.image_url }}" mode="widthFix"></image>
           <text>第{{ index+1 }}周: {{ item.name }}</text>
           <text class="info">{{ item.comment }} </text>
           <text class="highly" wx:if="{{ item.highly }}">强烈推荐</text>
+          <text catchtap="toRec" class="return-button" wx:if="{{ index !== weekly.length - 1 }}">返回本周</text>
         </view>
       </swiper-item>
     </block>

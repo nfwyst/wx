@@ -1,6 +1,6 @@
 image.about-banner {
   width: 375rpx;
-  height: 165px;
+  height: 345rpx;
   border-radius: 50%;
 }
 

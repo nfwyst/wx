@@ -31,4 +31,16 @@ swiper {
   width: calc(100% - 20rpx);
   height: 100%;
   background: rgba(242, 242, 242, .4);
+  position: relative;
+}
+
+.return-button {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  font-size: 26rpx;
+  font-style: italic;
+  border: 1px solid blue;
+  border-right: 0;
+  border-radius: 10%;
 }

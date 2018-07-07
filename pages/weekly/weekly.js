@@ -5,15 +5,21 @@ Page({
    */
   data: {
     indicatorDots: true,
+    currentIndex: 0,
     weekly: [{
       name: '教父',
       image_url: '/images/poster.png',
-      comment: '点评: 最精彩的剧本, 最真实的黑帮电影.................hahah',
+      comment: '点评: 最精彩的剧本, 最真实的黑帮电影.................',
       highly: true
     }, {
       name: '教父',
       image_url: '/images/poster.png',
-      comment: '点评: 最精彩的剧本, 最真实的黑帮电影.................hahah',
+      comment: '点评: 最精彩的剧本, 最真实的黑帮电影.................',
+      highly: true
+    },{
+      name: '教父',
+      image_url: '/images/poster.png',
+      comment: '点评: 最精彩的剧本, 最真实的黑帮电影.................',
       highly: true
     }]
   },
@@ -22,7 +28,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.setData({
+      currentIndex: this.data.weekly.length - 1
+    })
   },
 
   /**
@@ -72,5 +80,11 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+
+  toRec: function (event) {
+    this.setData({
+      currentIndex: this.data.weekly.length - 1
+    }) 
   }
 })
