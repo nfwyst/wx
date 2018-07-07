@@ -1,10 +1,7 @@
 image {
-  width: 150rpx;
-  height: 80px !important;
+  width: 200rpx;
+  height: 200rpx !important;
   border-radius: 3px;
-}
-
-text.info {
 }
 
 text.highly {
@@ -12,19 +9,26 @@ text.highly {
   color: red;
 }
 
-view.movie {
+text.info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0 20rpx;
-  box-sizing: border-box;
 }
 
-view.movie-detail {
-  width: 560rpx;
-  padding-left: 20rpx;  
-  box-sizing: border-box;
-  display: inline-block;
+swiper {
+  height: 90vh;
 }
 
-view.movie-detail > text {
-  display: block;
-  text-align: left;
+.movie {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-card {
+  width: calc(100% - 20rpx);
+  height: 100%;
+  background: rgba(242, 242, 242, .4);
 }

@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   padding: 20rpx 0;
-  background-color: #eee;
+  background-color: #fff;
   text-align: center;
   justify-content: space-around;
 } 

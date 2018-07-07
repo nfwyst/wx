@@ -1,11 +1,14 @@
-<view class="container">
-  <text>本周推荐</text>
-  <view class='movie'>
-    <image src="{{ weekly.image_url }}" mode="widthFix"></image>
-    <view class='movie-detail'>
-      <text>{{ weekly.name }}</text>
-      <text class="info">{{ weekly.comment }} </text>
-      <text class="highly" wx:if="{{ weekly.highly }}">强烈推荐</text>
-    </view> 
-  </view>
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" previous-margin="50rpx" next-margin="50rpx" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{ weekly }}">
+      <swiper-item class="movie">
+        <view class='container movie-card'>
+          <image src="{{ item.image_url }}" mode="widthFix"></image>
+          <text>第{{ index+1 }}周: {{ item.name }}</text>
+          <text class="info">{{ item.comment }} </text>
+          <text class="highly" wx:if="{{ item.highly }}">强烈推荐</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>
